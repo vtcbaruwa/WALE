@@ -1,0 +1,119 @@
+﻿/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #1E1E2E, #FF6B6B, #FFE66D);
+    color: #ffffff;
+}
+
+header {
+    background: rgba(30, 30, 46, 0.95);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFE66D;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFE66D;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    background: #FF6B6B;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #FFE66D;
+    color: #1E1E2E;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.social-icons a {
+    margin: 15px;
+    color: #FF6B6B;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFE66D;
+}
+
+footer {
+    background: rgba(30, 30, 46, 0.95);
+    padding: 25px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #FFE66D;
+    font-weight: bold;
+}
